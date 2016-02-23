@@ -14,7 +14,7 @@ def get_predict():
         if 0 < len(request.data) < 5000:
             text = str(request.data)
             rating = sa.get_predict_ratings(text)
-            response = {"message": "success", "value": rating}
+            response = {"message": "success", "value": rating[0]}
             return json.dumps(response)
         else:
             response = {"message": "error", "value": "something wrong with the input"}
