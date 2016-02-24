@@ -4,7 +4,7 @@ import sys
 sys.path.insert(0, 'home2/ciscerco/src/python27/lib/python2.7/site-packages')
 
 from flup.server.fcgi import WSGIServer
-from app import app
+from sentiment import app
 
 class ScriptNameStripper(object):
    def __init__(self, app):
