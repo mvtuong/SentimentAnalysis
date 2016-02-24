@@ -1,5 +1,6 @@
-#Ignore model file
+#Ignore model file, text file
 *.pkl
+*.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
