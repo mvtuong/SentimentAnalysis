@@ -103,7 +103,7 @@ class SentimentAnalysis:
 
     def get_predict_ratings(self, text):
         hist = self.__build_histogram(text)
-        rating = self.model.predict(hist)
+        rating = self.model.predict_proba(hist)
         return rating
 
     def __init__(self):

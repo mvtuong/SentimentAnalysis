@@ -1,1 +1,12 @@
-data: terrible toribe
+Traceback (most recent call last):
+  File "app.py", line 33, in <module>
+    app = create_app()
+  File "app.py", line 27, in create_app
+    sa = SentimentAnalysis()
+  File "/home2/ciscerco/public_html/predict/SentimentAnalysis/engine.py", line 115, in __init__
+    dtm = self.vectorizer.fit_transform(filenames).toarray()
+  File "/home2/ciscerco/src/python27/lib/python2.7/site-packages/sklearn/feature_extraction/text.py", line 823, in fit_transform
+    X = self._sort_features(X, vocabulary)
+  File "/home2/ciscerco/src/python27/lib/python2.7/site-packages/sklearn/feature_extraction/text.py", line 691, in _sort_features
+    for new_val, (term, old_val) in enumerate(sorted_features):
+KeyboardInterrupt
